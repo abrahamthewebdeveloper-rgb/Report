@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Boss Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h2>Welcome, <span id="user"></span></h2>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <section class="boss-controls">
+    <label>Select Region:</label>
+    <select id="regionSelect"></select><br>
+
+    <label>Select Project:</label>
+    <select id="projectSelect"></select><br>
+
+    <label>Select Report Type:</label>
+    <select id="typeSelect">
+      <option>Daily</option>
+      <option>Weekly</option>
+      <option>Monthly</option>
+      <option>Annual</option>
+    </select><br>
+
+    <button id="viewReportsBtn">View Reports</button>
+    <button id="exportCSVBtn">Export as CSV</button>
+  </section>
+
+  <section class="report-table">
+    <h3>Reports Table</h3>
+    <table id="reportsTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Coordinator</th>
+          <th>Task / Activity</th>
+          <th>Status</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="report-chart">
+    <h3>Report Visualization</h3>
+    <canvas id="reportChart" width="400" height="200"></canvas>
+  </section>
+
+  <script src="js/charts.js"></script>
+  <script src="js/boss.js"></script>
+</body>
+</html>

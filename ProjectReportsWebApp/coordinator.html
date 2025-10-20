@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coordinator Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <header>
+    <h2>Welcome, <span id="user"></span></h2>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <section class="report-form">
+    <h3>Submit Report</h3>
+
+    <label>Date:</label>
+    <input type="date" id="date"><br>
+
+    <label>Report Type:</label>
+    <select id="type">
+      <option>Daily</option>
+      <option>Weekly</option>
+      <option>Monthly</option>
+      <option>Annual</option>
+    </select><br>
+
+    <label>Task / Activity:</label>
+    <input type="text" id="task"><br>
+
+    <label>Status:</label>
+    <select id="status">
+      <option>Completed</option>
+      <option>In Progress</option>
+      <option>Delayed</option>
+    </select><br>
+
+    <label>Notes:</label>
+    <textarea id="notes" rows="4"></textarea><br>
+
+    <button id="submitBtn">Submit Report</button>
+    <p id="message" class="msg"></p>
+  </section>
+
+  <script src="js/coordinator.js"></script>
+</body>
+</html>

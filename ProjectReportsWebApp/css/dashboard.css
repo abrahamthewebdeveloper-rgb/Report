@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.report-form, .boss-controls, .report-table, .report-chart {
+  background-color: white;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.06);
+}
+
+.login-container {
+  width: 320px;
+  margin: 70px auto;
+  padding: 22px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.login-container input, .login-container button {
+  width: 90%;
+  margin: 6px 0;
+  padding: 8px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f2f2f2;
+}
